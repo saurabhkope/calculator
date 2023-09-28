@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple calculator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="until.css" type="text/css">
-
 </head>
-
-<body bgcolor="pink">
-    <h1 class="center">Simple Calculator using html ,css and javascript</h1>
-
-    <marquee direction="right">
-        <h1 style="font-family:Lucida Console">Made by Saurabh kope</h1>
-    </marquee>
-    <div class="container flex flex-col items-center bg-red mx-auto m-w-20">
-        <div class="row">
-            <input class="input" type="text" />
+<body>
+    <div class="container">
+        <h1>Online Calculator</h1>
+        <input class="input" type="text">
+        <div class="container-1">
+            <b>
+                <div class="row">
+                    <button id="clear" class="btn" style="padding: 20px 25px;"><span>C</span></button>
+                    <button id="back" class="btn" style="padding: 20px 15px;"><span>DEL</span></button>
+                    <button class="btn btn-color" style="padding: 20px 24px;">%<span></span></button>
+                    <button class="btn btn-color" style="padding: 20px 25px;"><span>/</span></button>
+                </div>
+                <div class="row">
+                    <button class="btn"><span>1</span></button>
+                    <button class="btn"><span>2</span></button>
+                    <button class="btn"><span>3</span></button>
+                    <button class="btn btn-color"><span>*</span></button>
+                </div>
+                <div class="row">
+                    <button class="btn"><span>4</span></button>
+                    <button class="btn"><span>5</span></button>
+                    <button class="btn"><span>6</span></button>
+                    <button class="btn btn-color"><span>-</span></button>
+                </div>
+                <div class="row">
+                    <button class="btn"><span>7</span></button>
+                    <button class="btn"><span>8</span></button>
+                    <button class="btn"><span>9</span></button>
+                    <button class="btn btn-color"><span>+</span></button>
+                </div>
+                <div class="row">
+                    <button class="btn" style="padding: 20px 37px;"><span>0</span></button>
+                    <button class="btn" style="padding: 20px 28px;"><span>.</span></button>
+                    <button id="equals" class="btn btn-color1" style="padding: 20px 47px;"><span>=</span></button>
+                </div>
+            </b>
+            <div class="history"></div> <!-- Calculation history section -->
+            <button id="clearHistory" class="btn-clear">Clear History</button>
         </div>
-        <div class="row">
-            <button class="button" style="padding: 20px 40px; background-color: yellow;">Clear</button>
-            <button class="button" style="background-color: yellow;">%</button>
-            <button class="button" style="background-color: yellow;">/</button>
-        </div>
-        <div class="row">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button" style="background-color: yellow;">*</button>
-        </div>
-        <div class="row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button" style="background-color: yellow;">-</button>
-        </div>
-        <div class="row">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button" style="background-color: yellow;">+</button>
-        </div>
-        <div class="row">
-            <button class="button" style="padding:20px 48px ;">0</button>
-            <button class="button">.</button>
-            <button class="button" style="background-color: yellow;">=</button>
-
-        </div>
-
     </div>
-
     <script src="script.js"></script>
 </body>
-
 </html>
